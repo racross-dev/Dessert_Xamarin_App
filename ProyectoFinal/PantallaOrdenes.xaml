@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.PantallaOrdenes">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#FFDEE9" Padding="15">
+            <Label Text="Listado de Órdenes" 
+                   FontSize="36" 
+                   FontAttributes="Bold" 
+                   TextColor="#8B4513" 
+                   HorizontalOptions="Center" 
+                   Margin="0,10" />
+
+            <!-- ListView para mostrar las órdenes -->
+            <ListView x:Name="OrdenesListView" 
+                      HasUnevenRows="True" 
+                      SeparatorVisibility="None"
+                      BackgroundColor="Transparent">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <!-- Card-style Frame for each order -->
+                            <Frame BorderColor="#FFC0CB" 
+                                   CornerRadius="20" 
+                                   Margin="10" 
+                                   Padding="15" 
+                                   BackgroundColor="#FFF5F7" 
+                                   HasShadow="True">
+                                <StackLayout Spacing="6">
+                                    <Label Text="{Binding Id_Orden}" 
+                                           FontSize="20" 
+                                           FontAttributes="Bold" 
+                                           TextColor="#D2691E" />
+
+                                    <Label Text="{Binding EmailField}" 
+                                           FontSize="14" 
+                                           TextColor="#8B4513" />
+
+                                    <Label Text="Productos:" 
+                                           FontSize="16" 
+                                           FontAttributes="Bold" 
+                                           TextColor="#8B4513" />
+
+                                    <!-- Sub-ListView para mostrar productos de cada orden -->
+                                    <ListView ItemsSource="{Binding Productos}" 
+                                              HasUnevenRows="True" 
+                                              SeparatorVisibility="None"
+                                              BackgroundColor="Transparent">
+                                        <ListView.ItemTemplate>
+                                            <DataTemplate>
+                                                <ViewCell>
+                                                    <StackLayout Orientation="Horizontal" 
+                                                                 Spacing="10" 
+                                                                 Padding="5,0">
+                                                        <Label Text="{Binding Nombre_Producto}" 
+                                                               FontSize="14" 
+                                                               TextColor="#D2691E" />
+
+                                                        <Label Text="{Binding Cantidad, StringFormat='Cantidad: {0}'}" 
+                                                               FontSize="14" 
+                                                               TextColor="#8B4513" />
+
+                                                        <Label Text="{Binding Precio, StringFormat='Precio: {0:C}'}" 
+                                                               FontSize="14" 
+                                                               TextColor="#FF6347" 
+                                                               FontAttributes="Bold" />
+                                                    </StackLayout>
+                                                </ViewCell>
+                                            </DataTemplate>
+                                        </ListView.ItemTemplate>
+                                    </ListView>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

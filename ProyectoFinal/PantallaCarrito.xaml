@@ -1,0 +1,110 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.PantallaCarrito"
+             BackgroundColor="#FFDEE9">
+
+    <StackLayout Padding="15" Spacing="20">
+        <!-- Título de la pantalla -->
+        <Label Text="Carrito de Compras" 
+               FontSize="36" 
+               FontAttributes="Bold" 
+               TextColor="#8B4513" 
+               HorizontalOptions="Center" 
+               Margin="0,5" />
+
+        <!-- ListView para mostrar los productos en el carrito -->
+        <ListView x:Name="CarritoListView" 
+                  HasUnevenRows="True" 
+                  SeparatorVisibility="None" 
+                  ItemsSource="{Binding Carrito}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <!-- Card-style Frame para cada producto en el carrito -->
+                        <Frame BorderColor="#FFC0CB" 
+                               CornerRadius="20" 
+                               Margin="10" 
+                               Padding="10" 
+                               BackgroundColor="#FFF5F7" 
+                               HasShadow="True">
+                            <StackLayout Orientation="Horizontal" Spacing="15">
+
+                                <!-- Imagen del producto -->
+                                <Image Source="{Binding Icono}" 
+                                       WidthRequest="80" 
+                                       HeightRequest="80" 
+                                       VerticalOptions="Center" 
+                                       Aspect="AspectFill" />
+
+                                <!-- Detalles del producto -->
+                                <StackLayout Orientation="Vertical" 
+                                             VerticalOptions="CenterAndExpand" 
+                                             Spacing="5">
+                                    <!-- Nombre del producto -->
+                                    <Label Text="{Binding Nombre_Producto}" 
+                                           FontSize="20" 
+                                           FontAttributes="Bold" 
+                                           TextColor="#D2691E" />
+
+                                    <!-- Descripción del producto -->
+                                    <Label Text="{Binding Descripcion}" 
+                                           FontSize="14" 
+                                           TextColor="#8B4513" />
+
+                                    <!-- Precio -->
+                                    <Label Text="{Binding Precio, StringFormat='${0:F2}'}" 
+                                           FontSize="16" 
+                                           TextColor="#FF6347" 
+                                           FontAttributes="Bold" />
+
+                                    <!-- Sección de cantidad con botones de incremento y decremento -->
+                                    <StackLayout Orientation="Horizontal" Spacing="10" VerticalOptions="Center">
+                                        <Button Text="-" 
+                                                Command="{Binding Path=BindingContext.DecreaseQuantityCommand, Source={x:Reference CarritoListView}}" 
+                                                CommandParameter="{Binding}" 
+                                                BackgroundColor="Red" 
+                                                Opacity="0.6"
+                                                TextColor="White"
+                                                VerticalOptions="Start"
+                                                FontSize="16"
+                                                WidthRequest="30" 
+                                                HeightRequest="30" 
+                                                Padding="0"
+                                                CornerRadius="15" />
+
+                                        <!-- Label para mostrar la cantidad del producto -->
+                                        <Label Text="{Binding Cantidad}" 
+                                               FontSize="18" 
+                                               VerticalOptions="Center" 
+                                               TextColor="#8B4513" />
+                                        <Button Text="+" 
+                                                Command="{Binding Path=BindingContext.IncreaseQuantityCommand, Source={x:Reference CarritoListView}}" 
+                                                CommandParameter="{Binding}" 
+                                                BackgroundColor="Green" 
+                                                Opacity="0.6"
+                                                TextColor="White" 
+                                                VerticalOptions="Start"
+                                                WidthRequest="30" 
+                                                HeightRequest="30" 
+                                                Padding="0"
+                                                CornerRadius="15" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <!-- Botón para proceder al pago -->
+        <Button Text="Proceder al Pago" 
+                Command="{Binding ProceedToPaymentCommand}" 
+                BackgroundColor="#FF6F61" 
+                TextColor="White" 
+                CornerRadius="20" 
+                FontSize="18" 
+                Padding="10" 
+                HorizontalOptions="FillAndExpand" />
+    </StackLayout>
+</ContentPage>

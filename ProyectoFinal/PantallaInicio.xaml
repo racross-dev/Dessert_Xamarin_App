@@ -1,0 +1,98 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.PantallaInicio">
+
+
+   
+    <ContentPage.ToolbarItems>
+        <!-- Ícono de carrito de compra con URL de imagen -->
+        <ToolbarItem IconImageSource="https://cdn-icons-png.flaticon.com/128/15598/15598573.png" 
+                     Text="Carrito"
+                     Command="{Binding NavigateToCartCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <StackLayout BackgroundColor="#FFDEE9" Padding="15">
+       
+        <!-- Título de la pantalla -->
+        <Label Text="Dessert" 
+               FontSize="36" 
+               FontAttributes="Bold" 
+               TextColor="#8B4513" 
+               HorizontalOptions="Center" 
+               Margin="0,5" />
+
+        <Label Text="Productos Disponibles" 
+               FontSize="24" 
+               TextColor="#8B4513" 
+               HorizontalOptions="Center" 
+               Margin="0,0,0,15" />
+
+        <!-- ListView para mostrar los productos disponibles -->
+        <ListView x:Name="ProductosListView" HasUnevenRows="True" SeparatorVisibility="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <!-- Card-style Frame for each product -->
+                        <Frame BorderColor="#FFC0CB" 
+                               CornerRadius="20" 
+                               Margin="10" 
+                               Padding="15" 
+                               BackgroundColor="#FFF5F7" 
+                               HasShadow="True">
+
+                            <!-- StackLayout para los detalles del producto -->
+                            <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" Spacing="6">
+                                <!-- Nombre del producto -->
+                                <Label Text="{Binding Nombre_Producto}" 
+                                           FontSize="20" 
+                                           FontAttributes="Bold" 
+                                           TextColor="#D2691E" />
+
+                                <!-- Imagen del producto (tamaño más grande) -->
+                                <Image Source="{Binding Icono}" 
+                                   HeightRequest="200" 
+                                   VerticalOptions="Center"
+                                   Aspect="AspectFill"
+                                   Margin="5,0,0,0" />
+
+                                <!-- Descripción del producto -->
+                                <Label Text="{Binding Descripcion}" 
+                                           FontSize="14" 
+                                           TextColor="#8B4513" />
+
+                                <!-- Cantidad y Precio -->
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Label Text="⭐" FontSize="16" TextColor="#FFD700" />
+                                    <Label Text="4.8" FontSize="16" TextColor="Gray" />
+
+                                    <Label Text="{Binding Cantidad, StringFormat='Cantidad: {0}'}" 
+                                               FontSize="14" 
+                                               TextColor="Gray"
+                                               HorizontalOptions="EndAndExpand" />
+                                </StackLayout>
+
+                                <!-- Calificación (ejemplo) y botón "Agregar al Carrito" -->
+                                <StackLayout Orientation="Horizontal" Spacing="5" VerticalOptions="End">
+                                    <Label Text="{Binding Precio, StringFormat='${0:F2}'}" 
+                                           FontSize="18" 
+                                           TextColor="#FF6347" 
+                                           FontAttributes="Bold"
+                                           VerticalTextAlignment="Center"/>
+                                    <Button Text="Agregar" 
+                                                Command="{Binding Path=BindingContext.AddToCartCommand, Source={x:Reference ProductosListView}}" 
+                                                CommandParameter="{Binding}" 
+                                                BackgroundColor="#FF6F61" 
+                                                TextColor="White" 
+                                                CornerRadius="20" 
+                                                FontSize="14" 
+                                                Padding="10,0"
+                                                HorizontalOptions="EndAndExpand" />
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

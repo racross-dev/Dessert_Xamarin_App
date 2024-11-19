@@ -1,0 +1,176 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.PantallaPago"
+             BackgroundColor="#FFDEE9">
+
+    <StackLayout Padding="15" Spacing="20">
+        <!-- Título de la pantalla -->
+        <Label Text="Método de Pago" 
+               FontSize="36" 
+               FontAttributes="Bold" 
+               TextColor="#8B4513" 
+               HorizontalOptions="Center" 
+               Margin="0,5" />
+
+        <Label Text="Selecciona el método de pago de tu preferencia para terminar y disfrutar de nuestros ricos postres 😋"
+               Padding="10,0"
+                FontSize="14"
+                HorizontalOptions="Center"
+                TextColor="#888" />
+
+        <!-- Frame para el Picker del método de pago -->
+        <Frame BackgroundColor="Transparent"
+               CornerRadius="20" 
+               Padding="5" 
+               HasShadow="True">
+            <Picker Title="Selecciona el método de pago"
+                    TitleColor="#D2691E"
+                    TextColor="#D2691E">
+                <Picker.Items>
+                    <x:String>Efectivo</x:String>
+                    
+                </Picker.Items>
+            </Picker>
+        </Frame>
+
+        <!-- Botón de Confirmación de Pago -->
+        <Button Text="Confirmar Pago" 
+            Command="{Binding ConfirmPaymentCommand}" 
+            BackgroundColor="#FF6F61" 
+            TextColor="White" 
+            CornerRadius="20" 
+            FontSize="18" 
+            Padding="10"
+            HorizontalOptions="FillAndExpand" />
+
+        <StackLayout Padding="20" Spacing="20">
+            <!-- Título -->
+            <Label Text="Información Bancaria" 
+               FontSize="24" 
+               FontAttributes="Bold" 
+               TextColor="#8B4513" 
+               HorizontalOptions="Center" />
+
+            <!-- Número de Cuenta -->
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                <Label Text="Número de Cuenta:" 
+                   FontSize="16" 
+                   TextColor="#555" 
+                   VerticalOptions="Center" />
+                <Label Text="1234567890123456" 
+                   FontSize="16" 
+                       FontAttributes="Bold"
+                        HorizontalOptions="EndAndExpand"
+                   TextColor="#333" 
+                   VerticalOptions="Center" />
+                <!-- Ícono para copiar -->
+                <ImageButton Source="https://cdn-icons-png.flaticon.com/128/54/54702.png" 
+                         Command="{Binding CopyCommand}" 
+                         CommandParameter="1234567890123456"
+                         WidthRequest="20"
+                         HeightRequest="20"
+                            
+                         BackgroundColor="Transparent" 
+                         VerticalOptions="Center" />
+            </StackLayout>
+
+            <!-- Banco -->
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                <Label Text="Banco:" 
+                   FontSize="16" 
+                   TextColor="#555" 
+                   VerticalOptions="Center" />
+                <Label Text=" Banco Nacional" 
+                   FontSize="16" 
+                       FontAttributes="Bold"
+                       HorizontalOptions="EndAndExpand"
+                   TextColor="#333" 
+                   VerticalOptions="Center" />
+                <!-- Ícono para copiar -->
+                <ImageButton Source="https://cdn-icons-png.flaticon.com/128/54/54702.png" 
+                         Command="{Binding CopyCommand}" 
+                         CommandParameter="Destino Banco Nacional"
+                         WidthRequest="20"
+                         HeightRequest="20"
+                         BackgroundColor="Transparent" 
+                         VerticalOptions="Center" />
+            </StackLayout>
+
+            <!-- Propietario de la Cuenta -->
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                <Label Text="Propietario de la Cuenta:" 
+                   FontSize="16" 
+                   TextColor="#555" 
+                   VerticalOptions="Center" />
+                <Label Text="Angel Emilio Cruz Garcia" 
+                   FontSize="16" 
+                       FontAttributes="Bold"
+                       HorizontalOptions="EndAndExpand"
+                   TextColor="#333" 
+                   VerticalOptions="Center" />
+                <!-- Ícono para copiar -->
+                <ImageButton Source="https://cdn-icons-png.flaticon.com/128/54/54702.png" 
+                         Command="{Binding CopyCommand}" 
+                         CommandParameter="Angel Emilio Cruz Garcia"
+                         WidthRequest="20"
+                         HeightRequest="20"
+                             
+                         BackgroundColor="Transparent" 
+                         VerticalOptions="Center" />
+            </StackLayout>
+
+            <!-- Información Adicional (Interbancarios) -->
+            <StackLayout>
+                <Label Text="Datos Interbancarios" 
+                   FontSize="22" 
+                   FontAttributes="Bold" 
+                   TextColor="#8B4513" 
+                   HorizontalOptions="Center" />
+
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Label Text="Clabe Interbancaria:" 
+                       FontSize="16" 
+                       TextColor="#555" 
+                       VerticalOptions="Center" />
+                    <Label Text="012345678901234567" 
+                       FontSize="16" 
+                           FontAttributes="Bold"
+                           HorizontalOptions="EndAndExpand"
+                       TextColor="#333" 
+                       VerticalOptions="Center" />
+                    <!-- Ícono para copiar -->
+                    <ImageButton Source="https://cdn-icons-png.flaticon.com/128/54/54702.png" 
+                             Command="{Binding CopyCommand}" 
+                             CommandParameter="012345678901234567"
+                             WidthRequest="20"
+                             HeightRequest="20"
+                                 
+                             BackgroundColor="Transparent" 
+                             VerticalOptions="Center" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Label Text="RFC:" 
+                       FontSize="16" 
+                       TextColor="#555" 
+                       VerticalOptions="Center" />
+                    <Label Text="RFC123456789" 
+                           FontAttributes="Bold"
+                              HorizontalOptions="EndAndExpand"
+                       FontSize="16" 
+                       TextColor="#333" 
+                       VerticalOptions="Center" />
+                    <!-- Ícono para copiar -->
+                    <ImageButton Source="https://cdn-icons-png.flaticon.com/128/54/54702.png" 
+                             Command="{Binding CopyCommand}" 
+                             CommandParameter="RFC123456789"
+                             WidthRequest="20"
+                             HeightRequest="20"
+                              
+                             BackgroundColor="Transparent" 
+                             VerticalOptions="Center" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

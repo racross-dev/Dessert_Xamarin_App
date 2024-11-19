@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ProyectoFinal.ViewModels"
+             x:Class="ProyectoFinal.PantallaRegistro"
+             Title="Registro de Usuario"
+             BackgroundColor="#FFDEE9">
+    <!-- Aplica el color de fondo a toda la página -->
+
+    <ContentPage.BindingContext>
+        <local:RegisterViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <ScrollView>    
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+
+            <Frame BackgroundColor="White" CornerRadius="20" Padding="20" HasShadow="True">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" Padding="10, 0" HorizontalOptions="Center">
+
+                        <Label Text="¡Hola!"
+                           FontSize="30"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           TextColor="#000" />
+                        <Image Source="https://cdn-icons-png.flaticon.com/128/2866/2866069.png" 
+                            WidthRequest="40" 
+                            HeightRequest="40" 
+                            VerticalOptions="Center"
+                            Opacity="0.5"/>
+                    </StackLayout>
+
+
+
+                    <Label Text="Completa los campos para registrarte"
+                           FontSize="14"
+                           HorizontalOptions="Center"
+                           TextColor="#888" />
+
+                    <!-- Campo de Nombre -->
+                    <Frame BackgroundColor="#F0F0F0" CornerRadius="20" Padding="10" HasShadow="False" Margin="0,5,0,0">
+                        <StackLayout Orientation="Horizontal" Padding="10, 0">
+                            <Image Source="https://cdn-icons-png.flaticon.com/128/1946/1946429.png" 
+                                   WidthRequest="25" 
+                                   HeightRequest="25" 
+                                   VerticalOptions="Center"
+                                   Opacity="0.5"/>
+                            <Entry Placeholder="Nombre"
+                                   x:Name="usuario"
+                                   Text="{Binding NombreField}"
+                                   PlaceholderColor="#C0C0C0"
+                                   TextColor="#000"
+                                   HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <!-- Campo de Apellido Paterno -->
+                    <Frame BackgroundColor="#F0F0F0" CornerRadius="20" Padding="10" HasShadow="False" Margin="0,5,0,0">
+                        <StackLayout Orientation="Horizontal" Padding="10, 0">
+                            <Image Source="https://cdn-icons-png.flaticon.com/128/1946/1946429.png" 
+                                   WidthRequest="25" 
+                                   HeightRequest="25" 
+                                   VerticalOptions="Center"
+                                   Opacity="0.5"/>
+                            <Entry Placeholder="Apellido Paterno"
+                                   x:Name="ApellidoP"
+                                   Text="{Binding ApellidoPField}"
+                                   PlaceholderColor="#C0C0C0"
+                                   TextColor="#000"
+                                   HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <!-- Campo de Apellido Materno -->
+                    <Frame BackgroundColor="#F0F0F0" CornerRadius="20" Padding="10" HasShadow="False" Margin="0,5,0,0">
+                        <StackLayout Orientation="Horizontal" Padding="10, 0">
+                            <Image Source="https://cdn-icons-png.flaticon.com/128/1946/1946429.png" 
+                                   WidthRequest="25" 
+                                   HeightRequest="25" 
+                                   VerticalOptions="Center"
+                                   Opacity="0.5"/>
+                            <Entry Placeholder="Apellido Materno"
+                                   x:Name="ApellidoM"
+                                   Text="{Binding ApellidoMField}"
+                                   PlaceholderColor="#C0C0C0"
+                                   TextColor="#000"
+                                   HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <!-- Campo de Correo Electrónico -->
+                    <Frame BackgroundColor="#F0F0F0" CornerRadius="20" Padding="10" HasShadow="False" Margin="0,5,0,0">
+                        <StackLayout Orientation="Horizontal" Padding="10, 0">
+                            <Image Source="https://cdn-icons-png.flaticon.com/128/16028/16028391.png" 
+                                   WidthRequest="25" 
+                                   HeightRequest="25" 
+                                   VerticalOptions="Center"
+                                   Opacity="0.5"/>
+                            <Entry Placeholder="Correo Electrónico"
+                                   Text="{Binding EmailField}"
+                                   PlaceholderColor="#C0C0C0"
+                                   TextColor="#000"
+                                   Keyboard="Email"
+                                   HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <!-- Campo de Contraseña -->
+                    <Frame BackgroundColor="#F0F0F0" CornerRadius="20" Padding="10" HasShadow="False" Margin="0,5,0,0">
+                        <StackLayout Orientation="Horizontal" Padding="10, 0">
+                            <Image Source="https://cdn-icons-png.flaticon.com/128/12001/12001145.png" 
+                                   WidthRequest="25" 
+                                   HeightRequest="25" 
+                                   VerticalOptions="Center"
+                                   Opacity="0.5"/>
+                            <Entry Placeholder="Contraseña"
+                                   Text="{Binding PasswordField}"
+                                   IsPassword="True"
+                                   PlaceholderColor="#C0C0C0"
+                                   TextColor="#000"
+                                   HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <!-- Campo de Confirmar Contraseña -->
+                    <Frame BackgroundColor="#F0F0F0" CornerRadius="20" Padding="10" HasShadow="False" Margin="0,5,0,0">
+                        <StackLayout Orientation="Horizontal" Padding="10, 0">
+                            <Image Source="https://cdn-icons-png.flaticon.com/128/12001/12001145.png" 
+                                   WidthRequest="25" 
+                                   HeightRequest="25" 
+                                   VerticalOptions="Center"
+                                   Opacity="0.5"/>
+                            <Entry Placeholder="Confirmar Contraseña"
+                                   Text="{Binding ConfirmPasswordField}"
+                                   IsPassword="True"
+                                   PlaceholderColor="#C0C0C0"
+                                   TextColor="#000"
+                                   HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Button Text="Registrar"
+                            Command="{Binding RegisterCommand}"
+                            BackgroundColor="#FF4B4B"
+                            TextColor="White"
+                            CornerRadius="25"
+                            Margin="0,20,0,10"
+                            HeightRequest="50"
+                            FontAttributes="Bold" />
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Label Text="¿Ya tienes una cuenta?" TextColor="#888" Margin="0,20,0,20"/>
+                        <Button Text="Inicia sesión" TextColor="#FF4B4B" FontAttributes="Bold" BackgroundColor="Transparent" x:Name="btnIniciosesion"
+                           Clicked="btnInciasesion_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

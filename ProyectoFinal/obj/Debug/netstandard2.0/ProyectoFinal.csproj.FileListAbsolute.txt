@@ -1,0 +1,86 @@
+C:\Users\samue\OneDrive\Escritorio\Aplicaciones\ProyectoFinal\ProyectoFinal\bin\Debug\netstandard2.0\ProyectoFinal.deps.json
+C:\Users\samue\OneDrive\Escritorio\Aplicaciones\ProyectoFinal\ProyectoFinal\bin\Debug\netstandard2.0\ProyectoFinal.dll
+C:\Users\samue\OneDrive\Escritorio\Aplicaciones\ProyectoFinal\ProyectoFinal\bin\Debug\netstandard2.0\ref\ProyectoFinal.dll
+C:\Users\samue\OneDrive\Escritorio\Aplicaciones\ProyectoFinal\ProyectoFinal\bin\Debug\netstandard2.0\ProyectoFinal.pdb
+C:\Users\samue\OneDrive\Escritorio\Aplicaciones\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.csproj.AssemblyReference.cache
+C:\Users\samue\OneDrive\Escritorio\Aplicaciones\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samue\OneDrive\Escritorio\Aplicaciones\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\samue\OneDrive\Escritorio\Aplicaciones\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaLogin.xaml.g.cs
+C:\Users\samue\OneDrive\Escritorio\Aplicaciones\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.AssemblyInfoInputs.cache
+C:\Users\samue\OneDrive\Escritorio\Aplicaciones\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.AssemblyInfo.cs
+C:\Users\samue\OneDrive\Escritorio\Aplicaciones\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.csproj.CoreCompileInputs.cache
+C:\Users\samue\OneDrive\Escritorio\Aplicaciones\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\samue\OneDrive\Escritorio\Aplicaciones\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.dll
+C:\Users\samue\OneDrive\Escritorio\Aplicaciones\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\refint\ProyectoFinal.dll
+C:\Users\samue\OneDrive\Escritorio\Aplicaciones\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.pdb
+C:\Users\samue\OneDrive\Escritorio\Aplicaciones\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaRegistro.xaml.g.cs
+C:\Users\samue\OneDrive\Escritorio\Aplicaciones\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaProductos.xaml.g.cs
+C:\Users\samue\OneDrive\Escritorio\Aplicaciones\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\Pagina.xaml.g.cs
+C:\Users\samue\OneDrive\Escritorio\Aplicaciones\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaPrincipal.xaml.g.cs
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\bin\Debug\netstandard2.0\ProyectoFinal.deps.json
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\bin\Debug\netstandard2.0\ProyectoFinal.dll
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\bin\Debug\netstandard2.0\ref\ProyectoFinal.dll
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\bin\Debug\netstandard2.0\ProyectoFinal.pdb
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.csproj.AssemblyReference.cache
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\LoginAdmin.xaml.g.cs
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\Pagina.xaml.g.cs
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaCarrito.xaml.g.cs
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaInicio.xaml.g.cs
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaLogin.xaml.g.cs
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaPago.xaml.g.cs
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaProductos.xaml.g.cs
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaRegistro.xaml.g.cs
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.AssemblyInfoInputs.cache
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.AssemblyInfo.cs
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.csproj.CoreCompileInputs.cache
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.dll
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\refint\ProyectoFinal.dll
+C:\Users\emili\OneDrive\Desktop\Typescript\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.pdb
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\bin\Debug\netstandard2.0\ProyectoFinal.deps.json
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\bin\Debug\netstandard2.0\ProyectoFinal.dll
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\bin\Debug\netstandard2.0\ref\ProyectoFinal.dll
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\bin\Debug\netstandard2.0\ProyectoFinal.pdb
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.csproj.AssemblyReference.cache
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\LoginAdmin.xaml.g.cs
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\Pagina.xaml.g.cs
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaCarrito.xaml.g.cs
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaInicio.xaml.g.cs
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaLogin.xaml.g.cs
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaPago.xaml.g.cs
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaProductos.xaml.g.cs
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaRegistro.xaml.g.cs
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.AssemblyInfoInputs.cache
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.AssemblyInfo.cs
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.csproj.CoreCompileInputs.cache
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.dll
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\refint\ProyectoFinal.dll
+C:\Users\samue\OneDrive\Escritorio\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.pdb
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.csproj.AssemblyReference.cache
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\LoginAdmin.xaml.g.cs
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\Pagina.xaml.g.cs
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaCarrito.xaml.g.cs
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaInicio.xaml.g.cs
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaLogin.xaml.g.cs
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaOrdenes.xaml.g.cs
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaPago.xaml.g.cs
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaProductos.xaml.g.cs
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\PantallaRegistro.xaml.g.cs
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.AssemblyInfoInputs.cache
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.AssemblyInfo.cs
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.csproj.CoreCompileInputs.cache
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\bin\Debug\netstandard2.0\ProyectoFinal.deps.json
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\bin\Debug\netstandard2.0\ProyectoFinal.dll
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\bin\Debug\netstandard2.0\ref\ProyectoFinal.dll
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\bin\Debug\netstandard2.0\ProyectoFinal.pdb
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.dll
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\refint\ProyectoFinal.dll
+C:\Users\emili\OneDrive\Desktop\Mod1\ProyectoFinal (2)\ProyectoFinal\ProyectoFinal\obj\Debug\netstandard2.0\ProyectoFinal.pdb

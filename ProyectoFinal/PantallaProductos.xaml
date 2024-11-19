@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.PantallaProductos"
+             Title="Registro de Producto"
+             BackgroundColor="#FFDEE9">
+    <!-- Aplica el color de fondo a toda la página -->
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+
+                <Frame BackgroundColor="White" CornerRadius="20" Padding="20" HasShadow="True">
+                    <StackLayout>
+                        <Label Text="Registro de Productos"
+                           FontSize="24"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           TextColor="#000" />
+
+                        <Label Text="Rellena los siguientes campos para dar de alta un nuevo postre en la aplicación"
+                           Padding="10,0"
+                           FontSize="14"
+                           HorizontalOptions="Center"
+                           TextColor="#888" />
+
+                        <!-- Campo de Nombre del Producto -->
+                        <Frame CornerRadius="20" Padding="10" HasShadow="False" BorderColor="#FFB6C1" Margin="0,10,0,0">
+                            <StackLayout Orientation="Horizontal" Padding="10,0">
+                                <Image Source="https://cdn-icons-png.flaticon.com/128/2965/2965574.png"
+                                   WidthRequest="25"
+                                   HeightRequest="25"
+                                   VerticalOptions="Center"
+                                   Opacity="0.5" />
+                                <Entry Placeholder="Nombre del Producto"
+                                   x:Name="nombre"
+                                   PlaceholderColor="#C0C0C0"
+                                   BackgroundColor="Transparent"
+                                   TextColor="#000"
+                                   HorizontalOptions="FillAndExpand" />
+                            </StackLayout>
+                        </Frame>
+
+                        <!-- Campo de Descripción -->
+                        <Frame CornerRadius="20" Padding="10" HasShadow="False" BorderColor="#FFB6C1" Margin="0,10,0,0">
+                            <StackLayout Orientation="Horizontal" Padding="10,0">
+                                <Image Source="https://cdn-icons-png.flaticon.com/128/3094/3094667.png"
+                                   WidthRequest="25"
+                                   HeightRequest="25"
+                                   VerticalOptions="Center"
+                                   Opacity="0.5" />
+                                <Entry Placeholder="Descripción"
+                                   x:Name="descripcion"
+                                   PlaceholderColor="#C0C0C0"
+                                   BackgroundColor="Transparent"
+                                   TextColor="#000"
+                                   HorizontalOptions="FillAndExpand" />
+                            </StackLayout>
+                        </Frame>
+
+                        <!-- Campo de Cantidad -->
+                        <Frame CornerRadius="20" Padding="10" HasShadow="False" BorderColor="#FFB6C1" Margin="0,10,0,0">
+                            <StackLayout Orientation="Horizontal" Padding="10,0">
+                                <Image Source="https://cdn-icons-png.flaticon.com/128/285/285968.png"
+                                   WidthRequest="25"
+                                   HeightRequest="25"
+                                   VerticalOptions="Center"
+                                   Opacity="0.5" />
+                                <Entry Placeholder="Cantidad"
+                                   x:Name="cantidad"
+                                   PlaceholderColor="#C0C0C0"
+                                   BackgroundColor="Transparent"
+                                   TextColor="#000"
+                                   HorizontalOptions="FillAndExpand" />
+                            </StackLayout>
+                        </Frame>
+
+                        <!-- Campo de Precio -->
+                        <Frame CornerRadius="20" Padding="10" HasShadow="False" BorderColor="#FFB6C1" Margin="0,10,0,0">
+                            <StackLayout Orientation="Horizontal" Padding="10,0">
+                                <Image Source="https://cdn-icons-png.flaticon.com/128/3037/3037156.png"
+                                   WidthRequest="25"
+                                   HeightRequest="25"
+                                   VerticalOptions="Center"
+                                   Opacity="0.5" />
+                                <Entry Placeholder="Precio"
+                                   x:Name="precio"
+                                   PlaceholderColor="#C0C0C0"
+                                   BackgroundColor="Transparent"
+                                   TextColor="#000"
+                                   HorizontalOptions="FillAndExpand" />
+                            </StackLayout>
+                        </Frame>
+
+                        <!-- Campo de Ícono -->
+                        <Frame CornerRadius="20" Padding="10" HasShadow="False" BorderColor="#FFB6C1" Margin="0,10,0,0">
+                            <StackLayout Orientation="Horizontal" Padding="10,0">
+                                <Image Source="https://cdn-icons-png.flaticon.com/128/2391/2391025.png"
+                                   WidthRequest="25"
+                                   HeightRequest="25"
+                                   VerticalOptions="Center"
+                                   Opacity="0.5" />
+                                <Entry Placeholder="Imagen"
+                                   x:Name="icono"
+                                   PlaceholderColor="#C0C0C0"
+                                   BackgroundColor="Transparent"
+                                   TextColor="#000"
+                                   HorizontalOptions="FillAndExpand" />
+                            </StackLayout>
+                        </Frame>
+
+                        <!-- Botón Guardar -->
+                        <Button Text="Guardar"
+                            x:Name="btnGuardar"
+                            Clicked="btnGuardar_Clicked"
+                            BackgroundColor="#FF4B4B"
+                            CornerRadius="25"
+                            HeightRequest="50"
+                            FontAttributes="Bold"
+                            FontSize="20"
+                            Margin="0,20,0,10"
+                            TextColor="White" />
+
+                        <Button Text="Ver Ordenes"
+                            Command="{Binding NavigateToOrdenesCommand}"
+                            BackgroundColor="#FF4B4B"
+                            TextColor="White"
+                            CornerRadius="25"
+                            HeightRequest="50"
+                            FontAttributes="Bold"
+                            FontSize="20"
+                            Margin="0,20,0,10" />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

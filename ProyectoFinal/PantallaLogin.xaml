@@ -1,0 +1,86 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.PantallaLogin" NavigationPage.HasNavigationBar= "False">
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#FFDEE9">
+
+            <!-- Imagen de usuario o ícono -->
+            <Image Source="https://mir-s3-cdn-cf.behance.net/project_modules/disp/015d7d46850385.5866ae4cee1ac.png" />
+
+            <!-- Título de la pantalla -->
+            <Label Text="Postrería Cielo de Azúcar" 
+                   FontSize="25" 
+                   FontAttributes="Bold"
+                   TextColor="#4D004D" 
+                   HorizontalOptions="Center" 
+                   Margin="0,20,0,-80" />
+
+            <!--Freme de login-->
+            <Frame CornerRadius="30" HeightRequest="100" Margin="40,110,40,110" VerticalOptions="FillAndExpand" BackgroundColor="#FFE6F2">
+                <StackLayout VerticalOptions="Center">
+                    <!-- Campo de Correo Electrónico -->
+                    <Frame CornerRadius="20" Padding="10" HasShadow="False"  Margin="0,-10,0,0">
+                        <StackLayout Orientation="Horizontal" Padding="10, 0">
+                            <Image Source="https://cdn-icons-png.flaticon.com/128/16028/16028391.png" 
+                                WidthRequest="25" 
+                                HeightRequest="25" 
+                                VerticalOptions="Center"
+                                Opacity="0.5"/>
+                            <Entry Placeholder="Correo Electrónico"
+                               x:Name="txtcorreo"
+                               Text="{Binding txtcorreo}"
+                                PlaceholderColor="#C0C0C0"
+                                TextColor="#000"
+                                HorizontalOptions="FillAndExpand"
+                       />
+                        </StackLayout >
+                    </Frame>
+                    <!-- Campo de Contraseña -->
+                    <Frame CornerRadius="20" Padding="10" HasShadow="False" Margin="0,20,0,0">
+                        <StackLayout Orientation="Horizontal" Padding="10,0">
+                            <Image Source="https://cdn-icons-png.flaticon.com/128/12001/12001145.png" 
+                                WidthRequest="25" 
+                                HeightRequest="25" 
+                                VerticalOptions="Center"
+                                Opacity="0.5"/>
+                            <Entry Placeholder="Contraseña"
+                               x:Name="txtcontraseña"
+                               Text="{Binding txtcontraseña}"
+                               IsPassword="True"
+                                PlaceholderColor="#C0C0C0"
+                                TextColor="#000"
+                                HorizontalOptions="FillAndExpand"
+                        />
+                        </StackLayout >
+                    </Frame>
+                    <!-- Botón de Login -->
+                    <Button Text="Iniciar Sesion" 
+                    BackgroundColor="#FF4B4B"
+                    TextColor="White" 
+                    CornerRadius="25"
+                    HeightRequest="55"
+                    Margin="30,20,30,0"
+                    FontAttributes="Bold"
+                    FontSize="20" 
+                    x:Name ="btniniciar"
+                    Command="{Binding LoginCommand}"
+                    />
+
+                    <Button Text="Registrarse"
+                            BackgroundColor="Transparent"
+                            TextColor="#FF4B4B"
+                            Command="{Binding NavigateToRegisterCommand}" />
+
+                    <Button Text="Administrador" 
+                            BackgroundColor="Transparent"
+                            TextColor="#C0C0C0"
+                            Command="{Binding NavigateToAdminLoginCommand}" />
+
+
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
